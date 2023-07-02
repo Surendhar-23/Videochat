@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+#Videos_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.video_player {
+  background-color: #000;
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (max-width: 750px) {
+  #Videos_container {
+    display: block;
+    width: 100%;
+    margin: 30px;
+  }
+
+  .video_player {
+    margin-bottom: 30px;
+  }
+}
